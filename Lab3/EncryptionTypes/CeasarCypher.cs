@@ -25,13 +25,14 @@ namespace Lab3.EncryptionTypes
             var normalizedText = text.ToUpper();
             var letters = normalizedText.ToCharArray();
             var sign = GetOperator(key);
+            var multiplier = Math.Abs(key/Alphabet.AlphabetString.Length);
             foreach (var letter in letters)
             {
                 var index = Alphabet.AlphabetString.IndexOf(letter) + key;
                 if (index < Alphabet.AlphabetString.Length && index >= 0)
                     result.Append(Alphabet.AlphabetString[index]);
                 else
-                    result.Append(Alphabet.AlphabetString[index - (Alphabet.AlphabetString.Length * sign)]);
+                    result.Append(Alphabet.AlphabetString[index - (Alphabet.AlphabetString.Length * sign * multiplier)]);
             }
             return result.ToString();
         }

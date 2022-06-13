@@ -15,7 +15,7 @@ namespace Lab3.MenuDisplay
                 switch (key)
                 {
                     case '1':
-                        Console.WriteLine("Please, input cypher key:");
+                        Console.WriteLine("\nPlease, input cypher key:");
                         if (int.TryParse(Console.ReadLine(), out var cypherKey))
                             return new CeasarCreator(cypherKey);
                         else

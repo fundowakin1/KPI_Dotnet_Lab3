@@ -30,7 +30,7 @@ try
 
     var decrypted = user.GetPassword();
 
-    Console.WriteLine($"Decrypted password: {decrypted}");
+    Console.WriteLine($"\nDecrypted password: {decrypted}");
 }
 catch (Exception ex)
 {
