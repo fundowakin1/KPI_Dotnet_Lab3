@@ -17,11 +17,11 @@ namespace Lab3.MenuDisplay
                     case '1':
                         Console.WriteLine("\nPlease, input cypher key:");
                         if (int.TryParse(Console.ReadLine(), out var cypherKey))
-                            return new CeasarCreator(cypherKey);
+                            return new CeasarEnrypter(cypherKey);
                         else
                             throw new InvalidDataException("Key was invalid!");
                     case '2':
-                        return new AtbashCreator();
+                        return new AtbashEncrypter();
                     default:
                         Console.WriteLine("Incorrect input");
                         break;

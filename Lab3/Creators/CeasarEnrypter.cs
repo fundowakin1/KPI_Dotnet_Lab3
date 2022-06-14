@@ -2,11 +2,11 @@
 
 namespace Lab3.Creators
 {
-    public class CeasarCreator : PasswordEncrypter
+    public class CeasarEnrypter : PasswordEncrypter
     {
         private readonly int _key;
 
-        public CeasarCreator(int key = 1)
+        public CeasarEnrypter(int key = 1)
         {
             _key = key;
         }

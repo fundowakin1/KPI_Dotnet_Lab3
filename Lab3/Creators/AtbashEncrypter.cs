@@ -2,7 +2,7 @@
 
 namespace Lab3.Creators
 {
-    public class AtbashCreator : PasswordEncrypter
+    public class AtbashEncrypter : PasswordEncrypter
     {
         public override ICypher CreateCypher()
         {
