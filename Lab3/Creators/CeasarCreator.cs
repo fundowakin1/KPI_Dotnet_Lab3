@@ -2,7 +2,7 @@
 
 namespace Lab3.Creators
 {
-    public class CeasarCreator : CypherCreator
+    public class CeasarCreator : PasswordEncrypter
     {
         private readonly int _key;
 

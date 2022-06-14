@@ -4,7 +4,7 @@ namespace Lab3.MenuDisplay
 {
     public class Menu
     {
-        public CypherCreator GetCypher()
+        public PasswordEncrypter GetCypher()
         {
             while (true)
             {
